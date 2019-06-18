@@ -14,4 +14,4 @@
      limitations under the License.
 -->
 
-<manifest package="com.google.android.exoplayer2.source.dash.test"/>
+<manifest package="com.google.android.exoplayer2VRT.source.dash.test"/>

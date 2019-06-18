@@ -54,7 +54,7 @@ android {
         defaultCast {
             dimension "receiver"
             manifestPlaceholders =
-                    [castOptionsProvider: "com.google.android.exoplayer2.ext.cast.DefaultCastOptionsProvider"]
+                    [castOptionsProvider: "com.google.android.exoplayer2VRT.ext.cast.DefaultCastOptionsProvider"]
         }
     }
 

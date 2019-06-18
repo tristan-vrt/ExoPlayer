@@ -21,7 +21,7 @@
   android:background="@android:color/black"
   android:orientation="horizontal"
   tools:ignore="Overdraw">
-  <com.google.android.exoplayer2.ui.PlayerControlView
+  <com.google.android.exoplayer2VRT.ui.PlayerControlView
     android:id="@+id/controller"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>

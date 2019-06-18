@@ -49,7 +49,7 @@ respectively.
 
 ## Links ##
 
-* [Javadoc][]: Classes matching `com.google.android.exoplayer2.ext.cronet.*`
+* [Javadoc][]: Classes matching `com.google.android.exoplayer2VRT.ext.cronet.*`
   belong to this module.
 
 [Javadoc]: https://exoplayer.dev/doc/reference/index.html

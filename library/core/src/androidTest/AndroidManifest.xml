@@ -16,7 +16,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.google.android.exoplayer2.core.test">
+    package="com.google.android.exoplayer2VRT.core.test">
 
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
   <uses-sdk/>
@@ -26,12 +26,12 @@
       tools:ignore="MissingApplicationIcon,HardcodedDebugMode">
     <uses-library android:name="android.test.runner"/>
     <provider
-      android:authorities="com.google.android.exoplayer2.core.test"
-      android:name="com.google.android.exoplayer2.upstream.ContentDataSourceTest$TestContentProvider"/>
+      android:authorities="com.google.android.exoplayer2VRT.core.test"
+      android:name="com.google.android.exoplayer2VRT.upstream.ContentDataSourceTest$TestContentProvider"/>
   </application>
 
   <instrumentation
-      android:targetPackage="com.google.android.exoplayer2.core.test"
+      android:targetPackage="com.google.android.exoplayer2VRT.core.test"
       android:name="androidx.test.runner.AndroidJUnitRunner"/>
 
 </manifest>

@@ -151,7 +151,7 @@ then implement your own logic to use the renderer for a given track.
 
 ## Links ##
 
-* [Javadoc][]: Classes matching `com.google.android.exoplayer2.ext.ffmpeg.*`
+* [Javadoc][]: Classes matching `com.google.android.exoplayer2VRT.ext.ffmpeg.*`
   belong to this module.
 
 [Javadoc]: https://exoplayer.dev/doc/reference/index.html

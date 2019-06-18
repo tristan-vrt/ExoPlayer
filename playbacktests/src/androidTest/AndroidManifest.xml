@@ -16,7 +16,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.google.android.exoplayer2.playbacktests">
+    package="com.google.android.exoplayer2VRT.playbacktests">
 
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
   <uses-permission android:name="android.permission.INTERNET"/>
@@ -28,14 +28,14 @@
       tools:ignore="MissingApplicationIcon,HardcodedDebugMode">
     <uses-library android:name="android.test.runner"/>
 
-    <activity android:name="com.google.android.exoplayer2.testutil.HostActivity"
+    <activity android:name="com.google.android.exoplayer2VRT.testutil.HostActivity"
         android:configChanges="keyboardHidden|orientation|screenSize"
         android:label="ExoPlayerTest"/>
 
   </application>
 
   <instrumentation
-      android:targetPackage="com.google.android.exoplayer2.playbacktests"
+      android:targetPackage="com.google.android.exoplayer2VRT.playbacktests"
       android:name="androidx.test.runner.AndroidJUnitRunner"/>
 
 </manifest>

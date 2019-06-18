@@ -16,7 +16,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.google.android.exoplayer2.ext.opus.test">
+    package="com.google.android.exoplayer2VRT.ext.opus.test">
 
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
   <uses-sdk/>
@@ -28,7 +28,7 @@
   </application>
 
   <instrumentation
-      android:targetPackage="com.google.android.exoplayer2.ext.opus.test"
+      android:targetPackage="com.google.android.exoplayer2VRT.ext.opus.test"
     android:name="androidx.test.runner.AndroidJUnitRunner"/>
 
 </manifest>

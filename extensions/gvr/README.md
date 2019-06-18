@@ -34,7 +34,7 @@ locally. Instructions for doing this can be found in ExoPlayer's
 
 ## Links ##
 
-* [Javadoc][]: Classes matching `com.google.android.exoplayer2.ext.gvr.*`
+* [Javadoc][]: Classes matching `com.google.android.exoplayer2VRT.ext.gvr.*`
   belong to this module.
 
 [Javadoc]: https://exoplayer.dev/doc/reference/index.html
