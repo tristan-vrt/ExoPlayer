@@ -210,7 +210,7 @@ public final class TrackSelectionDialogBuilder {
 
     // Inflate with the builder's context to ensure the correct style is used.
     LayoutInflater dialogInflater = LayoutInflater.from(builder.getContext());
-    View dialogView = dialogInflater.inflate(R.layout.exo_track_selection_dialog, /* root= */ null);
+    View dialogView = dialogInflater.inflate(R.layout.exo_vrt_track_selection_dialog, /* root= */ null);
 
     TrackSelectionView selectionView = dialogView.findViewById(R.id.exo_track_selection_view);
     selectionView.setAllowMultipleOverrides(allowMultipleOverrides);

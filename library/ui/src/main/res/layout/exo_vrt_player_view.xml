@@ -14,5 +14,5 @@
      limitations under the License.
 -->
 <merge>
-  <include layout="@layout/exo_playback_control_view"/>
+  <include layout="@layout/exo_vrt_simple_player_view"/>
 </merge>

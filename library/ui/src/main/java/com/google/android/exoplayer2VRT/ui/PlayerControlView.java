@@ -270,7 +270,7 @@ public class PlayerControlView extends FrameLayout {
   public PlayerControlView(
       Context context, AttributeSet attrs, int defStyleAttr, AttributeSet playbackAttrs) {
     super(context, attrs, defStyleAttr);
-    int controllerLayoutId = R.layout.exo_player_control_view;
+    int controllerLayoutId = R.layout.exo_vrt_player_control_view;
     rewindMs = DEFAULT_REWIND_MS;
     fastForwardMs = DEFAULT_FAST_FORWARD_MS;
     showTimeoutMs = DEFAULT_SHOW_TIMEOUT_MS;
