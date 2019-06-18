@@ -282,26 +282,26 @@ public class PlayerNotificationManager {
   }
 
   /** The action which starts playback. */
-  public static final String ACTION_PLAY = "com.google.android.exoplayer.play";
+  public static final String ACTION_PLAY = "com.google.android.exoplayerVRT.play";
   /** The action which pauses playback. */
-  public static final String ACTION_PAUSE = "com.google.android.exoplayer.pause";
+  public static final String ACTION_PAUSE = "com.google.android.exoplayerVRT.pause";
   /** The action which skips to the previous window. */
-  public static final String ACTION_PREVIOUS = "com.google.android.exoplayer.prev";
+  public static final String ACTION_PREVIOUS = "com.google.android.exoplayerVRT.prev";
   /** The action which skips to the next window. */
-  public static final String ACTION_NEXT = "com.google.android.exoplayer.next";
+  public static final String ACTION_NEXT = "com.google.android.exoplayerVRT.next";
   /** The action which fast forwards. */
-  public static final String ACTION_FAST_FORWARD = "com.google.android.exoplayer.ffwd";
+  public static final String ACTION_FAST_FORWARD = "com.google.android.exoplayerVRT.ffwd";
   /** The action which rewinds. */
-  public static final String ACTION_REWIND = "com.google.android.exoplayer.rewind";
+  public static final String ACTION_REWIND = "com.google.android.exoplayerVRT.rewind";
   /** The action which stops playback. */
-  public static final String ACTION_STOP = "com.google.android.exoplayer.stop";
+  public static final String ACTION_STOP = "com.google.android.exoplayerVRT.stop";
   /** The extra key of the instance id of the player notification manager. */
   public static final String EXTRA_INSTANCE_ID = "INSTANCE_ID";
   /**
    * The action which is executed when the notification is dismissed. It cancels the notification
    * and calls {@link NotificationListener#onNotificationCancelled(int, boolean)}.
    */
-  private static final String ACTION_DISMISS = "com.google.android.exoplayer.dismiss";
+  private static final String ACTION_DISMISS = "com.google.android.exoplayerVRT.dismiss";
 
   /**
    * Visibility of notification on the lock screen. One of {@link

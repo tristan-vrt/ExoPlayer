@@ -25,7 +25,7 @@ import android.database.sqlite.SQLiteException;
 public interface DatabaseProvider {
 
   /** Prefix for tables that can be read and written by ExoPlayer components. */
-  String TABLE_PREFIX = "ExoPlayer";
+  String TABLE_PREFIX = "ExoPlayerVRT";
 
   /**
    * Creates and/or opens a database that will be used for reading and writing.

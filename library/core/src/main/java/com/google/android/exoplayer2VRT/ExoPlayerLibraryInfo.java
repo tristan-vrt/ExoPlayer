@@ -25,7 +25,7 @@ public final class ExoPlayerLibraryInfo {
   /**
    * A tag to use when logging library information.
    */
-  public static final String TAG = "ExoPlayer";
+  public static final String TAG = "ExoPlayerVRT";
 
   /** The version of the library expressed as a string, for example "1.2.3". */
   // Intentionally hardcoded. Do not derive from other constants (e.g. VERSION_INT) or vice versa.
