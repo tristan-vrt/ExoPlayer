@@ -15,6 +15,7 @@
  */
 package com.google.android.exoplayer2VRT.text;
 
+import androidx.annotation.Nullable;
 import com.google.android.exoplayer2VRT.C;
 import com.google.android.exoplayer2VRT.decoder.SimpleDecoder;
 import java.nio.ByteBuffer;
@@ -69,6 +70,7 @@ public abstract class SimpleSubtitleDecoder extends
 
   @SuppressWarnings("ByteBufferBackingArray")
   @Override
+  @Nullable
   protected final SubtitleDecoderException decode(
       SubtitleInputBuffer inputBuffer, SubtitleOutputBuffer outputBuffer, boolean reset) {
     try {

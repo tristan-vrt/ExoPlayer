@@ -9,6 +9,9 @@
 -keep class com.google.android.exoplayer2VRT.ext.flac.FlacDecoderJni {
     *;
 }
--keep class com.google.android.exoplayer2VRT.util.FlacStreamInfo {
+-keep class com.google.android.exoplayer2VRT.util.FlacStreamMetadata {
+    *;
+}
+-keep class com.google.android.exoplayer2VRT.metadata.flac.PictureFrame {
     *;
 }

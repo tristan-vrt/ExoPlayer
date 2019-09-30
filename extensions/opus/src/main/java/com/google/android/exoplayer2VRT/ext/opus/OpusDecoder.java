@@ -15,6 +15,7 @@
  */
 package com.google.android.exoplayer2VRT.ext.opus;
 
+import androidx.annotation.Nullable;
 import com.google.android.exoplayer2VRT.C;
 import com.google.android.exoplayer2VRT.decoder.CryptoInfo;
 import com.google.android.exoplayer2VRT.decoder.DecoderInputBuffer;
@@ -150,6 +151,7 @@ import java.util.List;
   }
 
   @Override
+  @Nullable
   protected OpusDecoderException decode(
       DecoderInputBuffer inputBuffer, SimpleOutputBuffer outputBuffer, boolean reset) {
     if (reset) {

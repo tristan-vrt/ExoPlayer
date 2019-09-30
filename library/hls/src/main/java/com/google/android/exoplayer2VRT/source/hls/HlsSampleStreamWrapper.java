@@ -292,14 +292,17 @@ import java.util.Map;
     TrackSelection primaryTrackSelection = oldPrimaryTrackSelection;
     // Select new tracks.
     for (int i = 0; i < selections.length; i++) {
-      if (streams[i] == null && selections[i] != null) {
+      TrackSelection selection = selections[i];
+      if (selection == null) {
+        continue;
+      }
+      int trackGroupIndex = trackGroups.indexOf(selection.getTrackGroup());
+      if (trackGroupIndex == primaryTrackGroupIndex) {
+        primaryTrackSelection = selection;
+        chunkSource.setTrackSelection(selection);
+      }
+      if (streams[i] == null) {
         enabledTrackGroupCount++;
-        TrackSelection selection = selections[i];
-        int trackGroupIndex = trackGroups.indexOf(selection.getTrackGroup());
-        if (trackGroupIndex == primaryTrackGroupIndex) {
-          primaryTrackSelection = selection;
-          chunkSource.selectTracks(selection);
-        }
         streams[i] = new HlsSampleStream(this, trackGroupIndex);
         streamResetFlags[i] = true;
         if (trackGroupToSampleQueueIndex != null) {
@@ -322,6 +325,7 @@ import java.util.Map;
     if (enabledTrackGroupCount == 0) {
       chunkSource.reset();
       downstreamTrackFormat = null;
+      pendingResetUpstreamFormats = true;
       mediaChunks.clear();
       if (loader.isLoading()) {
         if (sampleQueuesBuilt) {
@@ -421,6 +425,7 @@ import java.util.Map;
     if (loader.isLoading()) {
       loader.cancelLoading();
     } else {
+      loader.clearFatalError();
       resetSampleQueues();
     }
     return true;
@@ -568,7 +573,7 @@ import java.util.Map;
 
   @Override
   public boolean continueLoading(long positionUs) {
-    if (loadingFinished || loader.isLoading()) {
+    if (loadingFinished || loader.isLoading() || loader.hasFatalError()) {
       return false;
     }
 

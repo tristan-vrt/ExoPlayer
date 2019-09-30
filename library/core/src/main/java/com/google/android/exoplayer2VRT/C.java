@@ -71,9 +71,10 @@ public final class C {
   /** Represents an unset or unknown percentage. */
   public static final int PERCENTAGE_UNSET = -1;
 
-  /**
-   * The number of microseconds in one second.
-   */
+  /** The number of milliseconds in one second. */
+  public static final long MILLIS_PER_SECOND = 1000L;
+
+  /** The number of microseconds in one second. */
   public static final long MICROS_PER_SECOND = 1000000L;
 
   /**
@@ -146,8 +147,8 @@ public final class C {
    * {@link #ENCODING_INVALID}, {@link #ENCODING_PCM_8BIT}, {@link #ENCODING_PCM_16BIT}, {@link
    * #ENCODING_PCM_24BIT}, {@link #ENCODING_PCM_32BIT}, {@link #ENCODING_PCM_FLOAT}, {@link
    * #ENCODING_PCM_MU_LAW}, {@link #ENCODING_PCM_A_LAW}, {@link #ENCODING_AC3}, {@link
-   * #ENCODING_E_AC3}, {@link #ENCODING_AC4}, {@link #ENCODING_DTS}, {@link #ENCODING_DTS_HD} or
-   * {@link #ENCODING_DOLBY_TRUEHD}.
+   * #ENCODING_E_AC3}, {@link #ENCODING_E_AC3_JOC}, {@link #ENCODING_AC4}, {@link #ENCODING_DTS},
+   * {@link #ENCODING_DTS_HD} or {@link #ENCODING_DOLBY_TRUEHD}.
    */
   @Documented
   @Retention(RetentionPolicy.SOURCE)
@@ -163,6 +164,7 @@ public final class C {
     ENCODING_PCM_A_LAW,
     ENCODING_AC3,
     ENCODING_E_AC3,
+    ENCODING_E_AC3_JOC,
     ENCODING_AC4,
     ENCODING_DTS,
     ENCODING_DTS_HD,
@@ -210,6 +212,8 @@ public final class C {
   public static final int ENCODING_AC3 = AudioFormat.ENCODING_AC3;
   /** @see AudioFormat#ENCODING_E_AC3 */
   public static final int ENCODING_E_AC3 = AudioFormat.ENCODING_E_AC3;
+  /** @see AudioFormat#ENCODING_E_AC3_JOC */
+  public static final int ENCODING_E_AC3_JOC = AudioFormat.ENCODING_E_AC3_JOC;
   /** @see AudioFormat#ENCODING_AC4 */
   public static final int ENCODING_AC4 = AudioFormat.ENCODING_AC4;
   /** @see AudioFormat#ENCODING_DTS */
@@ -666,25 +670,6 @@ public final class C {
 
   /** A default size in bytes for an individual allocation that forms part of a larger buffer. */
   public static final int DEFAULT_BUFFER_SEGMENT_SIZE = 64 * 1024;
-
-  /** A default size in bytes for a video buffer. */
-  public static final int DEFAULT_VIDEO_BUFFER_SIZE = 200 * DEFAULT_BUFFER_SEGMENT_SIZE;
-
-  /** A default size in bytes for an audio buffer. */
-  public static final int DEFAULT_AUDIO_BUFFER_SIZE = 54 * DEFAULT_BUFFER_SEGMENT_SIZE;
-
-  /** A default size in bytes for a text buffer. */
-  public static final int DEFAULT_TEXT_BUFFER_SIZE = 2 * DEFAULT_BUFFER_SEGMENT_SIZE;
-
-  /** A default size in bytes for a metadata buffer. */
-  public static final int DEFAULT_METADATA_BUFFER_SIZE = 2 * DEFAULT_BUFFER_SEGMENT_SIZE;
-
-  /** A default size in bytes for a camera motion buffer. */
-  public static final int DEFAULT_CAMERA_MOTION_BUFFER_SIZE = 2 * DEFAULT_BUFFER_SEGMENT_SIZE;
-
-  /** A default size in bytes for a muxed buffer (e.g. containing video, audio and text). */
-  public static final int DEFAULT_MUXED_BUFFER_SIZE =
-      DEFAULT_VIDEO_BUFFER_SIZE + DEFAULT_AUDIO_BUFFER_SIZE + DEFAULT_TEXT_BUFFER_SIZE;
 
   /** "cenc" scheme type name as defined in ISO/IEC 23001-7:2016. */
   @SuppressWarnings("ConstantField")
